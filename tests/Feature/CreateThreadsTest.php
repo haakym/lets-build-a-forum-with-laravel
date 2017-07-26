@@ -13,7 +13,7 @@ class CreateThreadsTest extends TestCase
 	use DatabaseMigrations;
 
     /** @test */
-    public function guest_may_not_create_threads()
+    public function guests_may_not_create_threads()
     {
 		$this->withExceptionHandling()
             ->get('/threads/create')
